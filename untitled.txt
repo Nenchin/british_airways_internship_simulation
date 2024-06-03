@@ -1,0 +1,95 @@
+Title: Predictive Modeling of British Airways Customer Bookings Completion
+
+Summary: This Jupyter notebook builds a predictive model to classify whether a British Airways customer booking will be completed or not. The model uses a Random Forest classifier trained on customer booking data and achieves an ROC-AUC score of 95.36% on the training data and 94.15% on the test data.
+
+Data:
+
+customer_booking.csv: Customer booking data containing features relevant to booking completion.
+Libraries:
+
+numpy: Scientific computing library
+itertools: Provides tools for iterating over objects
+pandas: Data analysis and manipulation library
+seaborn: Statistical visualization library
+matplotlib: Plotting library
+plotly.express: Interactive visualization library
+scikit-learn: Machine learning library
+model_selection: Train-test split, cross-validation, grid search
+preprocessing: StandardScaler, OneHotEncoder
+ensemble: RandomForestClassifier
+metrics: classification report, confusion matrix, precision, recall, f1-score, ROC-AUC score, precision-recall curves, ROC curves
+imblearn: Imbalanced learning library
+over_sampling: ADASYN for handling imbalanced classes
+sweetviz: Exploratory data analysis library
+Model:
+
+Random Forest: Ensemble learning algorithm
+Model Optimization:
+
+RandomizedSearchCV: Hyperparameter tuning with random search
+Cross-Validation: Model evaluation with k-fold cross-validation
+Results:
+
+ROC-AUC Score: 95.36% on training data, 94.15% on test data
+Next Steps:
+
+Apply the model to new customer bookings for real-time prediction
+Investigate feature importance to understand key drivers of booking completion
+Explore other machine learning models for potential improvement
+Additional Notes:
+
+This notebook utilizes data analysis and visualization techniques to explore the customer booking data.
+Imbalanced class handling techniques are employed to address potential bias due to class imbalance.
+The model performance is evaluated using various metrics to provide a comprehensive assessment.
+I hope this README file provides a concise overview of your Jupyter notebook. Feel free to modify it further to include more specific details or insights from your analysis.
+
+
+
+
+Title: Predictive Modeling of British Airways Customer Bookings Completion
+
+Summary: This Jupyter notebook investigates the feasibility of predicting whether a British Airways customer booking will be completed using a Random Forest classifier. The model achieves a high ROC-AUC score of 95.36 on the training data and 94.15 on the test data, suggesting promising potential for practical application.
+
+Data:
+
+customer_booking.csv: This dataset contains information about British Airways customer bookings, including booking details, customer demographics, and booking completion status.
+Libraries:
+
+numpy: Mathematical operations and arrays.
+itertools: Efficiently generate combinations of elements.
+pandas: Data manipulation and analysis.
+seaborn: Statistical visualization.
+matplotlib: Plotting library.
+plotly.express: Interactive data visualization library.
+scikit-learn: Machine learning library.
+train_test_split: Split data into training and testing sets.
+cross_val_score: Evaluate model performance using cross-validation.
+RandomizedSearchCV: Perform hyperparameter tuning with cross-validation.
+StandardScaler: Standardize numerical features.
+OneHotEncoder: Encode categorical features.
+ColumnTransformer: Apply transformations to different feature groups.
+RandomForestClassifier: Random Forest classifier model.
+classification_report: Generate classification report.
+confusion_matrix: Generate confusion matrix.
+precision_score: Calculate precision score.
+recall_score: Calculate recall score.
+f1_score: Calculate F1 score.
+roc_auc_score: Calculate ROC-AUC score.
+precision_recall_curve: Generate precision-recall curve.
+roc_curve: Generate ROC curve.
+imblearn.over_sampling: Address class imbalance with ADASYN sampling.
+sweetviz: Exploratory data analysis library.
+Methodology:
+
+Data Exploration and Preprocessing: The data was explored using descriptive statistics and visualizations to understand its characteristics and identify potential issues. Missing values were dealt with, and categorical features were encoded using one-hot encoding.
+Model Training and Hyperparameter Tuning: A Random Forest classifier was trained on the preprocessed data. Randomized search with cross-validation was used to optimize the model's hyperparameters.
+Model Evaluation: The model's performance was evaluated using various metrics, including ROC-AUC score, precision, recall, F1 score, and confusion matrix.
+Conclusion: The model achieved a high ROC-AUC score on both the training and test data, indicating strong predictive power. This suggests that the model can be potentially used to predict customer booking completion with high accuracy, which could be valuable for British Airways in optimizing their booking process and customer service.
+Further Exploration:
+
+Investigate the impact of feature engineering on model performance.
+Compare the performance of the Random Forest classifier with other machine learning models.
+Explore the reasons for misclassified bookings and identify potential areas for improvement.
+Note: This README file provides a general overview of the notebook. For more detailed information and technical specifics, please refer to the Jupyter notebook itself.
+
+I hope this README file is helpful! Please let me know if you have any other questions.
